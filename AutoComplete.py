@@ -11,7 +11,7 @@ def formatSql():
             if p in line:
                 PSQL = line.split(p)[-1].split('?')
             elif ps in line:
-                Parameters = line.split(ps)[-1].split('),')
+                Parameters = line.split(ps)[-1].split('), ')
         f.close()
         if len(PSQL) != len(Parameters) + 1:
             print("拆分长度出错")
