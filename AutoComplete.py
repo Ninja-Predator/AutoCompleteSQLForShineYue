@@ -22,7 +22,7 @@ def formatSql():
             for index, ParameterW in enumerate(Parameters):
                 Parameter = ParameterW[:ParameterW.rfind('(')]
                 St = ParameterW.split('(')[-1]
-                if St == 'String':
+                if St == 'String' or St == 'String)':
                     Parameter = '\'' + Parameter + '\''
                 finalSQL += Parameter
                 finalSQL += PSQL[index + 1]
