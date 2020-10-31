@@ -1,4 +1,5 @@
 dasdasddddddPreparing: update ACT set channel=?,source=? where 1=1
 asdasdasdParameters: sad2)1(1(String), sda,啊r222(String)
 
-f
+update ACT set channel='sad2)1(1',source='sda,啊r222' where 1=1
+;
