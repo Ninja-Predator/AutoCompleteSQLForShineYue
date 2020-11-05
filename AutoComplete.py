@@ -1,4 +1,6 @@
 # -*- coding: UTF-8 -*-
+import subprocess
+from os import devnull
 
 import win32clipboard
 import win32con
@@ -76,6 +78,7 @@ def set_clipboard(fin_sql):
 
 
 if __name__ == '__main__':
-    format_sql()
-    print("按下回车结束程序")
-    input()
+    while True:
+        format_sql()
+        print("按下回车再来一遍")
+        subprocess.check_call("pause", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
